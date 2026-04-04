@@ -1,0 +1,27 @@
+# ============================================================================ #
+#  Monorepo-local ignores
+# ============================================================================ #
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+__pycache__/
+
+# Julia local environment files
+**/Manifest.toml
+**/LocalPreferences.toml
+**/.manifest
+**/.project
+**/.dev
+
+# Local work directories
+**/.local/
+**/build/
+**/temp/
+**/backup/
+**/sysimage/
