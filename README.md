@@ -13,14 +13,7 @@ The package exposes two main entry points:
 
 Supported matrix sizes are compile-time fixed `N x N` matrices with `1 <= N <= 15`, and the current API is intended for **complex** matrices. The returned eigenvalues are an `NTuple{N,T}`.
 
-Currently, install the package directly from GitHub:
-
-```julia
-using Pkg
-Pkg.add(url = "https://github.com/weishansu011017/TinyEigvals.jl")
-```
-
-Once the package is registered in Julia's General registry, installation will simply be:
+Install from Julia's General registry:
 
 ```julia
 using Pkg
