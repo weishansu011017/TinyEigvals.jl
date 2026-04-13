@@ -96,12 +96,12 @@ This solver is well suited for large batches of tiny dense eigenvalue problems. 
 
 gave the following batch-performance results for `8 x 8` complex eigenvalue problems:
 
-| Grid | # Problems | CPU serial | CPU 12T | GPU | GPU/serial | GPU/thread |
-|---|---:|---:|---:|---:|---:|---:|
-| `128 x 128` | 16,384 | 101.59 ms | 12.8 ms | 5.76 ms | 17.6x | 2.2x |
-| `256 x 256` | 65,536 | 405.62 ms | 49.35 ms | 10.635 ms | 38.1x | 4.6x |
-| `512 x 512` | 262,144 | 1626.11 ms | 195.7 ms | 38.284 ms | 42.5x | 5.1x |
-| `1024 x 1024` | 1,048,576 | 6505.63 ms | 791.79 ms | 147.568 ms | 44.1x | 5.4x |
+| # Problems | CPU serial | CPU 12T | GPU | GPU/serial | GPU/thread |
+|---:|---:|---:|---:|---:|---:|
+| 16,384 | 101.59 ms | 12.8 ms | 5.76 ms | 17.6x | 2.2x |
+| 65,536 | 405.62 ms | 49.35 ms | 10.635 ms | 38.1x | 4.6x |
+| 262,144 | 1626.11 ms | 195.7 ms | 38.284 ms | 42.5x | 5.1x |
+| 1,048,576 | 6505.63 ms | 791.79 ms | 147.568 ms | 44.1x | 5.4x |
 
 These numbers show that `tiny_eigvals` can run correctly inside a CUDA kernel and that, for large batches of tiny matrices already resident on GPU, the GPU implementation can significantly outperform both serial and threaded CPU execution.
 
